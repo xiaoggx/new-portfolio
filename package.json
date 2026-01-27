@@ -1,0 +1,49 @@
+{
+  "name": "g.a-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Personal portfolio website of Gabriel L. Andrade - DevOps & Cloud Infrastructure Engineer",
+  "author": "Gabriel L. Andrade",
+  "homepage": "https://portfolio.eldersmc.top",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoggx/portfolio.git"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "export": "next build && touch out/.nojekyll",
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "framer-motion": "^12.0.0",
+    "next": "14.1.0",
+    "next-auth": "^4.24.13",
+    "pg": "^8.17.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.0.0",
+    "@heroicons/react": "^2.1.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20.0.0",
+    "@types/pg": "^8.16.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "14.1.0",
+    "gh-pages": "^6.0.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.0.0"
+  }
+}
