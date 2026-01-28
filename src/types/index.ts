@@ -41,7 +41,7 @@ export interface Certificate {
 
 
 export interface SkillCategory {
-    id: 'infrastructure' | 'cloud' | 'automation' | 'tools' | 'development';
+    id: 'development' | 'ai-data' | 'infrastructure' | 'systems' | 'databases' | 'specialized';
     skills: Skill[];
     color: string;
     icon: string;
@@ -51,7 +51,7 @@ export interface SkillCategory {
 export interface Skill {
     name: string;
     level: number;
-    category: 'infrastructure' | 'cloud' | 'automation' | 'tools';
+    category: 'development' | 'ai-data' | 'infrastructure' | 'systems' | 'databases' | 'specialized';
     icon?: string;
     yearsOfExperience?: number;
 }

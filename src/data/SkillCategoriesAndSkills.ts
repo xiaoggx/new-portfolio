@@ -1,63 +1,75 @@
 import { Skill, SkillCategory } from '@/types';
 
 export const skills: Skill[] = [
-  // Infrastructure
-  { name: 'Linux (Ubuntu/Arch)', level: 95, category: 'infrastructure', yearsOfExperience: 4 },
-  { name: 'Active Directory', level: 70, category: 'infrastructure', yearsOfExperience: 1 },
-  { name: 'pfSense', level: 80, category: 'infrastructure', yearsOfExperience: 2 },
-  { name: 'TCP/IP Networking', level: 90, category: 'infrastructure', yearsOfExperience: 2 },
-  { name: 'VPNs', level: 85, category: 'infrastructure', yearsOfExperience: 2 },
-  { name: 'Cisco IOS/Routing', level: 80, category: 'infrastructure', yearsOfExperience: 2 },
+  // Development
+  { name: 'Python', level: 90, category: 'development', yearsOfExperience: 5 },
+  { name: 'TypeScript/JS', level: 85, category: 'development', yearsOfExperience: 3 },
+  { name: 'C/C++', level: 75, category: 'development', yearsOfExperience: 1 },
+  { name: 'Java', level: 70, category: 'development', yearsOfExperience: 1 },
+  { name: 'React/Astro', level: 80, category: 'development', yearsOfExperience: 2 },
+  { name: 'FastAPI/Django', level: 85, category: 'development', yearsOfExperience: 3 },
+  { name: 'Tailwind/CSS/HTML', level: 90, category: 'development', yearsOfExperience: 3 },
+
+  // AI & Data Science
+  { name: 'PyTorch/TensorFlow', level: 80, category: 'ai-data', yearsOfExperience: 4 },
+  { name: 'Pandas/NumPy/Scikit-learn', level: 80, category: 'ai-data', yearsOfExperience: 4 },
+  { name: 'Ollama/LLMs', level: 75, category: 'ai-data', yearsOfExperience: 2 },
+  { name: 'Jupyter', level: 80, category: 'ai-data', yearsOfExperience: 4 },
+
+  // Infrastructure & DevOps
+  { name: 'Docker/Kubernetes', level: 95, category: 'infrastructure', yearsOfExperience: 2 },
+  { name: 'Oracle Cloud (OCI)/AWS/Azure', level: 80, category: 'infrastructure', yearsOfExperience: 2 },
   { name: 'Nginx/Traefik', level: 85, category: 'infrastructure', yearsOfExperience: 3 },
 
-  // Cloud & Containers
-  { name: 'Docker', level: 95, category: 'tools', yearsOfExperience: 2 },
-  { name: 'Kubernetes', level: 75, category: 'tools', yearsOfExperience: 1 },
-  { name: 'Oracle Cloud (OCI)', level: 80, category: 'cloud', yearsOfExperience: 2 },
-  { name: 'AWS', level: 70, category: 'cloud', yearsOfExperience: 1 },
+  // Systems & Platforms
+  { name: 'Arch Linux', level: 75, category: 'systems', yearsOfExperience: 2 },
+  { name: 'Debian/Ubuntu', level: 90, category: 'systems', yearsOfExperience: 4 },
 
-  // Development & Automation
-  { name: 'Python', level: 85, category: 'development', yearsOfExperience: 5 },
-  { name: 'TypeScript', level: 85, category: 'development', yearsOfExperience: 2 },
-  { name: 'Tailwind CSS', level: 90, category: 'development', yearsOfExperience: 2 },
-  { name: 'Bash/Shell', level: 80, category: 'automation', yearsOfExperience: 3 },
-  { name: 'PowerShell', level: 75, category: 'automation', yearsOfExperience: 3 },
-  { name: 'Git/CI/CD', level: 85, category: 'development', yearsOfExperience: 3 },
-  { name: 'Pandas/Data Analysis', level: 75, category: 'development', yearsOfExperience: 1 },
-  { name: 'LLM/AI Integration', level: 70, category: 'development', yearsOfExperience: 1 },
+  // Databases & Tools
+  { name: 'PostgreSQL/MariaDB/SQL', level: 85, category: 'databases', yearsOfExperience: 2 },
+  { name: 'Git/VS Code', level: 90, category: 'databases', yearsOfExperience: 3 },
 
-  // Tools & Databases
-  { name: 'PostgreSQL', level: 85, category: 'tools', yearsOfExperience: 2 },
-  { name: 'Loki/Grafana/Promtail', level: 80, category: 'tools', yearsOfExperience: 2 },
-  { name: 'Microsoft 365', level: 90, category: 'tools', yearsOfExperience: 10 },
-  { name: 'Cloudflare', level: 90, category: 'tools', yearsOfExperience: 2 },
-  { name: 'Portainer', level: 90, category: 'tools', yearsOfExperience: 2 },
+  // Creative & Specialized
+  { name: 'DiscordJS/Nextcord', level: 90, category: 'specialized', yearsOfExperience: 2 },
+  { name: 'Neovim', level: 60, category: 'specialized', yearsOfExperience: 1 },
 ];
 
 export const skillCategories: SkillCategory[] = [
   {
-    id: 'infrastructure',
-    skills: skills.filter(s => s.category === 'infrastructure'),
+    id: 'development',
+    skills: skills.filter(s => s.category === 'development'),
     color: 'from-blue-500 to-cyan-500',
-    icon: '🌐',
+    icon: '💻',
   },
   {
-    id: 'cloud',
-    skills: skills.filter(s => s.category === 'cloud'),
+    id: 'ai-data',
+    skills: skills.filter(s => s.category === 'ai-data'),
     color: 'from-purple-500 to-pink-500',
+    icon: '🧠',
+  },
+  {
+    id: 'infrastructure',
+    skills: skills.filter(s => s.category === 'infrastructure'),
+    color: 'from-sky-500 to-blue-500',
     icon: '☁️',
   },
   {
-    id: 'automation',
-    skills: skills.filter(s => s.category === 'automation'),
-    color: 'from-lime-500 to-emerald-500',
-    icon: '⚙️',
+    id: 'systems',
+    skills: skills.filter(s => s.category === 'systems'),
+    color: 'from-slate-500 to-gray-500',
+    icon: '🐧',
   },
   {
-    id: 'tools',
-    skills: skills.filter(s => s.category === 'tools'),
-    color: 'from-orange-500 to-red-500',
-    icon: '🛠️',
+    id: 'databases',
+    skills: skills.filter(s => s.category === 'databases'),
+    color: 'from-emerald-500 to-green-500',
+    icon: '🗄️',
+  },
+  {
+    id: 'specialized',
+    skills: skills.filter(s => s.category === 'specialized'),
+    color: 'from-violet-500 to-indigo-500',
+    icon: '🎮',
   },
 ];
 

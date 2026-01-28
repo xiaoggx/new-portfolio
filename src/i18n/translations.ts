@@ -28,10 +28,12 @@ export interface Translations {
     subtitle: string;
     badge: string;
     categories: {
+      development: string;
+      'ai-data': string;
       infrastructure: string;
-      cloud: string;
-      automation: string;
-      tools: string;
+      systems: string;
+      databases: string;
+      specialized: string;
     };
     yearsExperience: string;
     totalSkills: string;
@@ -188,10 +190,12 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Visão geral das minhas competências técnicas e níveis de proficiência',
       badge: 'Expertise Técnica',
       categories: {
-        infrastructure: 'Infraestrutura & Redes',
-        cloud: 'Cloud & Containers',
-        automation: 'Automação & DevOps',
-        tools: 'Ferramentas & Monitoramento',
+        development: 'Desenvolvimento',
+        'ai-data': 'IA & Ciência de Dados',
+        infrastructure: 'Infraestrutura & DevOps',
+        systems: 'Sistemas & Plataformas',
+        databases: 'Bancos de Dados & Ferramentas',
+        specialized: 'Criativo & Especializado',
       },
       yearsExperience: 'anos de experiência',
       totalSkills: 'Tecnologias',
@@ -447,10 +451,12 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'A comprehensive overview of my technical skills and proficiency levels',
       badge: 'Technical Expertise',
       categories: {
-        infrastructure: 'Infrastructure & Networking',
-        cloud: 'Cloud & Containers',
-        automation: 'Automation & DevOps',
-        tools: 'Tools & Monitoring',
+        development: 'Development',
+        'ai-data': 'AI & Data Science',
+        infrastructure: 'Infrastructure & DevOps',
+        systems: 'Systems & Platforms',
+        databases: 'Databases & Tools',
+        specialized: 'Creative & Specialized',
       },
       yearsExperience: 'years experience',
       totalSkills: 'Technologies',
