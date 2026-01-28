@@ -22,6 +22,9 @@ export const authOptions: NextAuthOptions = {
                 if (credentials.username === adminUser) {
                     if (adminPasswordHash && adminPasswordHash.startsWith('$2')) {
                         isValid = await bcrypt.compare(credentials.password, adminPasswordHash);
+                    } else if (process.env.ADMIN_PASSWORD) {
+                        // Fallback to plain text if hash not set
+                        isValid = credentials.password === process.env.ADMIN_PASSWORD;
                     }
                 }
 

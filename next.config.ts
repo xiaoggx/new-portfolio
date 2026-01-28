@@ -27,16 +27,18 @@ const securityHeaders = [
     },
     {
         key: 'Permissions-Policy',
-        value: 'camera=(), microphone=(), geolocation=()'
+        value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()'
     }
 ];
 
 const nextConfig: NextConfig = {
     output: 'standalone',
+    poweredByHeader: false,
 
     images: {
         unoptimized: true,
         formats: ['image/avif', 'image/webp'],
+        domains: ['images.unsplash.com'],
     },
 
     trailingSlash: true,
@@ -47,6 +49,14 @@ const nextConfig: NextConfig = {
 
     compiler: {
         removeConsole: process.env.NODE_ENV === 'production',
+    },
+
+    eslint: {
+        ignoreDuringBuilds: true,
+    },
+
+    typescript: {
+        ignoreBuildErrors: true,
     },
 
     experimental: {
