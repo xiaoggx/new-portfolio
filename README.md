@@ -10,7 +10,6 @@ A modern, Full Stack personal portfolio. Designed to be scalable, and easy to ma
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Portainer-13BEFA?style=for-the-badge&logo=portainer&logoColor=white" alt="Portainer" />
 </div>
 
 ---

@@ -56,7 +56,7 @@ export const skillCategories: SkillCategory[] = [
   {
     id: 'systems',
     skills: skills.filter(s => s.category === 'systems'),
-    color: 'from-slate-500 to-gray-500',
+    color: 'from-orange-500 to-yellow-500',
     icon: '🐧',
   },
   {
