@@ -19,6 +19,9 @@ export function middleware(request: NextRequest) {
         response.headers.set(key, value);
     });
 
+    // enforcing removal
+    response.headers.delete('x-powered-by');
+
     return response;
 }
 
