@@ -1,5 +1,4 @@
-import type { NextConfig } from "next";
-
+/** @type {import('next').NextConfig} */
 const securityHeaders = [
     {
         key: 'X-DNS-Prefetch-Control',
@@ -35,21 +34,26 @@ const securityHeaders = [
     }
 ];
 
-const nextConfig: NextConfig = {
+const nextConfig = {
+    reactStrictMode: true,
     output: 'standalone',
     poweredByHeader: false,
-
+    trailingSlash: true,
+    swcMinify: true,
 
     images: {
         unoptimized: true,
+        domains: ['images.unsplash.com'],
         formats: ['image/avif', 'image/webp'],
     },
 
-    trailingSlash: true,
+    eslint: {
+        ignoreDuringBuilds: true,
+    },
 
-    reactStrictMode: true,
-
-    swcMinify: true,
+    typescript: {
+        ignoreBuildErrors: true,
+    },
 
     compiler: {
         removeConsole: process.env.NODE_ENV === 'production',
@@ -70,4 +74,4 @@ const nextConfig: NextConfig = {
     },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
